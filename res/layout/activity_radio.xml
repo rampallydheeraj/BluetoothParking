@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/ScrollView01" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:orientation="vertical">
+		<TextView android:id="@+id/textView2" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Paired Devices"
+			android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="bold"/>
+		<RadioGroup android:id="@+id/radioSex"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+		<TextView android:id="@+id/textView3" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Select Mode"
+			android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="bold"/>
+		<RadioGroup android:id="@+id/radioSex1"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+			<RadioButton android:id="@+id/radioMale"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="Energy Efficient mode" android:checked="true" />
+
+			<RadioButton android:id="@+id/radioFemale"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="Normal" />
+
+
+		</RadioGroup>
+
+		<Button android:id="@+id/btnDisplay" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/display" />
+
+		<TextView android:id="@+id/textView1" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Medium Text"
+			android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<com.google.android.maps.MapView
+			android:id="@+id/themap" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_alignParentLeft="false"
+			android:apiKey="0eAyNpF_OnQaU7lqNQlmK6_nCaskm6EJFpzEV4g"
+			android:clickable="false" android:visibility="invisible" />
+
+
+
+	</LinearLayout>
+</ScrollView>
